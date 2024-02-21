@@ -1,4 +1,4 @@
-import random
+from random import shuffle
 
 class carta:
     def __init__(self , valor , pinta):
@@ -22,7 +22,7 @@ class mazo:
         else:
             self.cartas = [carta(v , p) for v in ['A' , 'J' , 'Q' , 'K'] + [str(x) for x in range(2 , 11)] 
                                         for p in ['♠' , '♥' , '♦' , '♣']]
-    
+   
     def darValor(self):
         valor = 0;
         for c in self.cartas:
