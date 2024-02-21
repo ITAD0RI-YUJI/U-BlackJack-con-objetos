@@ -48,7 +48,7 @@ class mazo:
         if todas:
             print(self.cartas[0].mostrar())
         else:
-            print("* de *")
+            print("* *")
         
         for c in self.cartas[1:]: # Recorre desde el elemento 2, o sea el elemento 1 no lo muestra
             print(c.mostrar())
