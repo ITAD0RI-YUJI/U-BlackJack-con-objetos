@@ -1,3 +1,5 @@
+import random
+
 class carta:
     def __init__(self , valor , pinta):
         self.valor = valor
@@ -44,4 +46,6 @@ if __name__ == '__main__':
         print(c.mostrar())
     print(j.darValor())
 
-#Cómo desordenar las cartas desde el principio?  -  TAREA  
+#Cómo desordenar las cartas desde el principio?  -  TAREA 
+
+# DUDA: las variables que se crean dentro del objeto, son globales en ese objeto? (o sea todo lo que esté dentro de ese objeto puede acceder a ella?) 
