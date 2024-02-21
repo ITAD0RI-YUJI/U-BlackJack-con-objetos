@@ -13,8 +13,8 @@ class juego:
         self.jugador.agregarCarta(self.mazo.darCarta())
 
     def mostrarJuego(self):
-        print("jugador: ") 
+        print("\n• JUGADOR: ") 
         self.jugador.mostrarCartas()
 
-        print("Casa: ")
+        print("\n• CASA: ")
         self.casa.mostrarCartas()
