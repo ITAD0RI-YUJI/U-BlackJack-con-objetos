@@ -1,5 +1,12 @@
 from main import *
 
+class Usuario:
+    def __init__(self , nombre):
+        self.nombre = nombre
+    
+    def User_presentation(self):
+        return print("\n♥ Hola ", self.nombre, " bienvenido")
+
 class juego:
     def __init__(self):
         self.mazo = mazo()
@@ -13,7 +20,7 @@ class juego:
         self.jugador.agregarCarta(self.mazo.darCarta())
 
     def mostrarJuego(self):
-        print("\n• JUGADOR: ") 
+        print("\n• JUGADOR: ")  #Aprender como poner el nombre acá (tal vez en con herencia)
         self.jugador.mostrarCartas()
 
         print("\n• CASA: ")
